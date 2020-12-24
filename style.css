@@ -1,0 +1,806 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background: url(assets/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    height: 1200px;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+li  {
+    list-style: none;
+}
+
+.container {
+    width: 1440px;
+    height: 916px;
+    background: #FDFDFD;
+    border-radius: 24px;
+
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 11.83%;
+    bottom: 11.83%;
+
+    display: flex;
+}
+
+/********************Sidebar Menu**************************/
+
+.container .sidebar {
+    width: 256px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #E4E4E4;
+
+    
+
+}
+
+/*logo*/
+
+.container .sidebar .logo {
+    width: 108px;
+    height: 72px;
+
+    margin-left: 42px;
+    margin-top: 49px;
+   
+    position: relative;
+
+   
+}
+
+.container .sidebar .logo div {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -1px;
+
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+
+}
+
+.container .sidebar .logo span {
+    font-size: 48px;
+    color: #FF7C5D;
+    letter-spacing: -1px;
+}
+
+/*end of logo*/
+
+  /*menu*/ 
+
+.container .sidebar .menu {
+    width: 256px;
+    margin-top: 57px;
+    padding:0;
+   
+        
+}
+
+
+.container .sidebar .menu li {
+    width: 216px;
+    height: 56px;
+    padding: 0;
+    display:flex;
+    align-items: center;
+   
+    
+    background: #2F3CED;
+    font-family: Inter, sans-seri;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    position: relative;
+   
+    
+}
+
+.container .sidebar .menu li img {
+   position: absolute;
+   left: 25px;
+    
+}
+
+.container .sidebar .menu li span {
+    position: absolute;
+    left: 64px;
+   
+    
+
+}
+
+.container .sidebar .menu li:nth-child(2), 
+.container .sidebar .menu li:nth-child(3),
+.container .sidebar .menu li:nth-child(4),
+.container .sidebar .menu li:nth-child(5),
+.container .sidebar .menu li:nth-child(6) {
+    background: transparent;
+}
+
+
+.container .sidebar .menu li:nth-child(1) {
+    border-radius: 0px 12px 12px 0px;
+
+}
+
+
+
+.container .sidebar .menu li:nth-child(1) img {
+   width: 24px;
+   height: 24px;
+
+
+}
+        
+/*end of menu*/
+
+
+
+/*student info*/
+
+.container .sidebar .student_info {
+    width: 256px;
+    height: 96px;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 820px;
+   
+}
+
+
+.container .sidebar .student_info .avatar {
+    width: 40px;
+    height: 40px;
+    margin: 26px 16px 30px 24px;
+
+   
+}
+
+.container .sidebar .student_info .name span {
+    display: inline-block;
+}
+.container .sidebar .student_info .name span:nth-child(1) {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #11142D;
+}
+
+.container .sidebar .student_info .name span:nth-child(2) {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #808191;
+
+   
+}
+
+
+.container .sidebar .student_info .nav_arrow {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    margin-left: 26px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+   
+
+    
+}
+
+.container .sidebar .student_info .nav_arrow img {
+    width: 8px;
+    height: 4px;
+   
+}
+
+/*student info*/
+
+/********************End of Sidebar Menu**************************/
+
+
+/********************Courses**************************/
+
+.container main {
+    width: 677px;
+    height: 916px;
+    position: relative;
+    
+}
+
+
+/*greeting*/
+
+.container main .greeting {
+    width: 580px;
+    height: 99px;
+    margin: 47px 63px 32px 34px;
+    Line-height: 32px;
+
+   
+
+  
+    
+}
+
+.container main .greeting p:nth-child(1) {
+    height: 32px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #11142D;
+
+   
+    
+
+   
+
+}
+
+
+.container main .greeting p:nth-child(2) {
+   
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #11142D;
+
+    height: 60px;
+    margin-top: 10px;
+   
+    
+}
+
+
+/*end of greeting*/
+
+
+/*hero*/
+
+.container main .banner {
+    width: 620px;
+    height: 405px;
+    margin-left: 34px;
+    margin-right: 23px;
+
+    background: #2F3CED;
+    border-radius: 24px;
+
+    position: relative;
+    z-index: 100;
+    
+   
+}
+
+
+
+.container main .banner .banner_bg {
+    width: 359px;
+    height: 359px;
+   
+
+    background: url(assets/big_pic.png);
+    background-repeat: no-repeat;
+  
+
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    bottom:28px;
+   
+  
+
+}
+
+.container main .banner_bg1 {
+    width: 600px;
+    height: 404px;
+    background-color:#AFD5FF;;
+    border-radius: 24px;
+
+    position: absolute;
+    top: 189px;
+    left: 42px;
+      
+}
+
+
+.container main .banner_bg2 {
+    width: 574px;
+    height: 404px;
+    background:  #AFD5FF;
+    opacity: 0.4;
+    border-radius: 24px;
+
+    position: absolute;
+    top: 199px;
+    left: 54px;
+
+}
+
+
+.container main .banner .banner_text p:nth-child(1) {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    
+
+    position: absolute;
+    top: 30px;
+    left: 367px;
+    
+    
+    
+   
+}
+
+.container main .banner .banner_text p:nth-child(2) {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 144px;
+    left: 367px;
+
+}
+
+.container main .banner .btn {
+    width: 158px;
+    height: 56px;
+
+    position:absolute;
+    top: 267px;
+    left: 367px;
+    padding: 18px 43px;
+  
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.250929);
+    border-radius: 16px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+
+    
+   
+}
+
+
+
+.container main .banner .pagination {
+    width: 68px;
+    height: 8px;
+    display: flex;
+
+   position: absolute;
+   bottom: 34px;
+   left: 367px;  
+   
+}
+
+.container main .banner .pagination span {
+    display: inline-block;
+    margin-right: 16px;
+    
+}
+
+.container main .banner .pagination span:nth-child(2) img {
+   padding-top: 9px;
+}
+
+/*end of hero*/
+
+
+
+/*learning path*/ 
+
+
+.container main .learning > p {
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+
+    position: absolute;
+    top: 645px;
+    left: 33px;
+    margin-bottom: 0;
+
+    
+}
+
+
+.container main .learning .card_wrapper {
+    position: absolute;
+    top: 697px;
+    left: 34px;
+    margin-top: 16px;
+   
+    display: flex;
+    gap: 24px;
+
+   
+}
+
+
+.container main .learning .card_wrapper .cards {
+    width: 190px;
+    height: 187px;
+    border-radius: 24px;
+    background: #FFFFFF;
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding-left: 20px;
+
+    position: relative;
+    z-index: 1000;
+    
+    
+   
+}
+
+
+.container main .learning .card_wrapper .cards p:nth-child(1) {
+    
+    margin-top: 24px;
+    font-size: 16px;
+    letter-spacing:-0.5px;
+    color:  #11142D;
+    margin-bottom: 0;
+   
+}
+
+.container main .learning .card_wrapper .cards p:nth-child(2) {
+    font-size: 12px;
+    line-height: 19px;
+    color: #808191;
+
+    margin-top: 8px;
+    margin-bottom: 0;
+} 
+
+
+.container main .learning .card_wrapper .cards p:nth-child(3) {
+    font-size: 12px;
+    font-family: Open Sans;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+
+    margin-top: 37px;
+    margin-bottom: 0px;
+}
+
+.container main .learning .card_wrapper .cards .students {
+    margin-top: 14px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+
+.container main .learning .card_wrapper .cards .students .pp {
+    width: 24px;
+    height: 24px;
+   
+   
+}
+
+.container main .learning .card_wrapper .cards .students .pp:nth-child(2) {
+    position: absolute;
+    left: 8px;
+     
+ }
+
+
+ .container main .learning .card_wrapper .cards .students .pp:nth-child(3) {
+    position: absolute;
+    left: 16px;
+   
+}
+
+.container main .learning .card_wrapper .cards .students .pp:nth-child(4) {
+    position: absolute;
+    left: 24px;
+   
+}
+
+.container main .learning .card_wrapper .cards .students .pp:nth-child(5) {
+    position: absolute;
+    left: 32px;
+ }
+ 
+ .container main .learning .card_wrapper .cards .students .pp:nth-child(6) {
+    position: absolute;
+    left: 40px;
+ }
+
+
+ .container main .learning .card_wrapper .cards .students .star {
+    position: absolute;
+    left: 112px;
+    top: 8px;
+
+ }
+
+
+ .container main .learning .card_wrapper .cards .students .dot1 {
+    position: absolute;
+    top: 13px;
+    left: 140px;
+
+
+   
+  
+}
+
+
+.container main .learning .card_wrapper .cards .students .dot2 {
+    position: absolute;
+    top: 13px;
+    left: 145px;
+   
+  
+}
+
+.container main .learning .card_wrapper .shadow {
+    width: 168px;
+    height: 240px;
+
+    background: #E3E6EC;;
+    mix-blend-mode: multiply;
+    opacity: 0.91;
+    filter: blur(86.985px);
+    border-radius: 24px;
+}
+
+
+.container main .learning .card_wrapper #one {
+   
+
+    position: absolute;
+    top: 22px;
+    left: 45px;
+   
+}
+
+
+.container main .learning .card_wrapper #two {
+
+    position: absolute;
+    top: 22px;
+    left: 259px;
+
+
+}
+
+
+.container main .learning .card_wrapper #three {
+   
+    position: absolute;
+    top: 22px;
+    left: 474px;
+
+
+}
+
+
+/*end of learning path*/
+
+
+/********************End of Courses********************************/
+
+
+/********************Course in Progress**************************/
+
+.container .course_in_progress {
+    width: 506px;
+    height: 916px;
+
+    background:  #F5FBFF;
+
+    position: absolute;
+    left: 934px;
+    top: 0;
+
+    
+}
+
+
+.container .course_in_progress .search_bar_wrapper {
+    margin-top: 67px;
+    margin-left:42px;
+   
+    position: relative;
+
+
+}
+
+
+.container .course_in_progress .search_bar_wrapper .search_icon, .container .course_in_progress .search_bar_wrapper span{
+    position: absolute;
+    top:0;
+}
+
+.container .course_in_progress .search_bar_wrapper span {
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808191;
+}
+
+.container .course_in_progress .search_bar_wrapper .notif_icon {
+    position: absolute;
+    right: 72px;
+    top: -15px;
+   
+    
+}
+
+.container .course_in_progress .search_bar_wrapper .notif_icon img {
+    width: 48px;
+    height: 48px;
+    
+    
+
+}
+
+/*course taken*/
+
+.container .course_in_progress .course_title {
+    margin-top: 188px;
+    margin-left: 39px;
+    
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #11142D;
+}
+
+.container .course_in_progress .list_container{
+    margin-left: 24px;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.container .course_in_progress .list_container li{
+    width: 444px;
+    height: 84px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+
+    background: #FFFFFF;
+
+    display: flex;
+
+    position: relative;
+
+}
+
+.container .course_in_progress .list_container li:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.container .course_in_progress .list_container li img {
+    object-fit: contain;
+}
+
+
+.container .course_in_progress .list_container li .square_icon {
+    margin: 15px 0 13px 24px;
+    
+ 
+} 
+
+.container .course_in_progress .list_container li .right_arrow {
+    position: absolute;
+    right: 24px;
+    top: 27px;
+}
+
+.container .course_in_progress .list_container li .text_wrapper {
+    margin-left: 24px;
+}
+
+.container .course_in_progress .list_container li .text_wrapper p {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+.container .course_in_progress .list_container li .text_wrapper p:nth-child(1) {
+    font-size: 16px;
+    color: #11142D;
+    margin-top: 24px;
+    margin-bottom: 0;
+
+}
+
+.container .course_in_progress .list_container li .text_wrapper p:nth-child(2) {
+    font-size: 13px;
+    color: #808191;
+    margin-top: 3px;
+}
+
+/*end of course taken*/
+
+/*learning point graph*/
+.container .course_in_progress .learning_point {
+    position: absolute;
+    top: 645px;
+    left: 24px;
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 35px;
+    color: #121212;
+}
+
+
+.container .course_in_progress .graph {
+   position: absolute;
+   top: 697px;
+   left: 24px;
+   margin-top: 16px;
+}
+
+/*end of learning point graph*/
+
+/********************End of Course in Progress**************************/
